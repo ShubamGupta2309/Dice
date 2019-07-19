@@ -1,21 +1,277 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- <div class="def"style="background-image: url('https://cdn.pixabay.com/photo/2014/06/11/17/00/cook-366875__340.jpg');background-size: 100% 100%;"> -->
+ <app-nav></app-nav>
+<h1 class="sum" style="text-align: center"><strong><u>Roll The Dice</u>!</strong></h1>
+<br>
+<div class="req">
+    <h3 *ngIf="val == 1" style="text-align: center">Table no. 1 said Good Service</h3>
+    <h3 *ngIf="val == 2" style="text-align: center">Table no. 1 asked for Water</h3>
+    <h3 *ngIf="val == 3" style="text-align: center">Table no. 1 called for Waitor</h3>
+    <h3 *ngIf="val == 4" style="text-align: center">Table no. 1 asked for Food Menu</h3>
+    <h3 *ngIf="val == 5" style="text-align: center">Table no. 1 asked for Bill</h3>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- <div class="req">
+    <h3 *ngIf="val2 == 1" style="text-align: center">Table no. 2 said Good Service</h3>
+    <h3 *ngIf="val2 == 2" style="text-align: center">Table no. 2 asked for Water</h3>
+    <h3 *ngIf="val2 == 3" style="text-align: center">Table no. 2 called for Waitor</h3>
+    <h3 *ngIf="val2 == 4" style="text-align: center">Table no. 2 asked for Food Menu</h3>
+    <h3 *ngIf="val2 == 5" style="text-align: center">Table no. 2 asked for Bill</h3>
+</div>
+<div class="req">
+    <h3 *ngIf="val3 == 1" style="text-align: center">Table no. 3 said Good Service</h3>
+    <h3 *ngIf="val3 == 2" style="text-align: center">Table no. 3 asked for Water</h3>
+    <h3 *ngIf="val3 == 3" style="text-align: center">Table no. 3 called for Waitor</h3>
+    <h3 *ngIf="val3 == 4" style="text-align: center">Table no. 3 asked for Food Menu</h3>
+    <h3 *ngIf="val3 == 5" style="text-align: center">Table no. 3 asked for Bill</h3>
+</div>
+<div class="req">
+    <h3 *ngIf="val4 == 1" style="text-align: center">Table no. 4 said Good Service</h3>
+    <h3 *ngIf="val4 == 2" style="text-align: center">Table no. 4 asked for Water</h3>
+    <h3 *ngIf="val4 == 3" style="text-align: center">Table no. 4 called for Waitor</h3>
+    <h3 *ngIf="val4 == 4" style="text-align: center">Table no. 4 asked for Food Menu</h3>
+    <h3 *ngIf="val4 == 5" style="text-align: center">Table no. 4 asked for Bill</h3>
+</div>
+<div class="req">
+    <h3 *ngIf="val5 == 1" style="text-align: center">Table no. 5 said Good Service</h3>
+    <h3 *ngIf="val5 == 2" style="text-align: center">Table no. 5 asked for Water</h3>
+    <h3 *ngIf="val5 == 3" style="text-align: center">Table no. 5 called for Waitor</h3>
+    <h3 *ngIf="val5 == 4" style="text-align: center">Table no. 5 asked for Food Menu</h3>
+    <h3 *ngIf="val5 == 5" style="text-align: center">Table no. 5 asked for Bill</h3>
+</div>
+<div class="req">
+    <h3 *ngIf="val6 == 1" style="text-align: center">Table no. 6 said Good Service</h3>
+    <h3 *ngIf="val6 == 2" style="text-align: center">Table no. 6 asked for Water</h3>
+    <h3 *ngIf="val6 == 3" style="text-align: center">Table no. 6 called for Waitor</h3>
+    <h3 *ngIf="val6 == 4" style="text-align: center">Table no. 6 asked for Food Menu</h3>
+    <h3 *ngIf="val6 == 5" style="text-align: center">Table no. 6 asked for Bill</h3>
+</div>
+<div class="req">
+    <h3 *ngIf="val7 == 1" style="text-align: center">Table no. 7 said Good Service</h3>
+    <h3 *ngIf="val7 == 2" style="text-align: center">Table no. 7 asked for Water</h3>
+    <h3 *ngIf="val7 == 3" style="text-align: center">Table no. 7 called for Waitor</h3>
+    <h3 *ngIf="val7 == 4" style="text-align: center">Table no. 7 asked for Food Menu</h3>
+    <h3 *ngIf="val7 == 5" style="text-align: center">Table no. 7 asked for Bill</h3>
+</div>
+<div class="req">
+    <h3 *ngIf="val8 == 1" style="text-align: center">Table no. 8 said Good Service</h3>
+    <h3 *ngIf="val8 == 2" style="text-align: center">Table no. 8 asked for Water</h3>
+    <h3 *ngIf="val8 == 3" style="text-align: center">Table no. 8 called for Waitor</h3>
+    <h3 *ngIf="val8 == 4" style="text-align: center">Table no. 8 asked for Food Menu</h3>
+    <h3 *ngIf="val8 == 5" style="text-align: center">Table no. 8 asked for Bill</h3>
+</div>
+<div class="req">
+    <h3 *ngIf="val9 == 1" style="text-align: center">Table no. 9 said Good Service</h3>
+    <h3 *ngIf="val9 == 2" style="text-align: center">Table no. 9 asked for Water</h3>
+    <h3 *ngIf="val9 == 3" style="text-align: center">Table no. 9 called for Waitor</h3>
+    <h3 *ngIf="val9 == 4" style="text-align: center">Table no. 9 asked for Food Menu</h3>
+    <h3 *ngIf="val9 == 5" style="text-align: center">Table no. 9 asked for Bill</h3>
+</div> -->
+<br>
+<br>
+<div class="container">
+<div class="row">
+    <div class="col-sm-4">
+      <div class="br">
+        <h1 class="sum" style="text-align: center">Table No. 1 </h1>
+        <br>
+        <h3 *ngIf="val == 1" style="text-align: center">Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+        <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+        <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+        <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+        <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+        <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+    </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="br">
+        <h1 class="sum" style="text-align: center">Table No. 2 </h1>
+        <br>
+        <h3 *ngIf="val == 1" style="text-align: center">Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+      <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+      <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+      <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+      <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+      <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+</div>
+    </div>
+<div class="col-sm-4">
+    <div class="br">
+    <h1 class="sum" style="text-align: center">Table No. 3 </h1>
+    <br>
+    <h3 *ngIf="val == 1" style="text-align: center">Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+    <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+    <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+    <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+    <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+    <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+  </div>
+  </div>
+  </div>
+</div>
+<br>
+<br>
 
-<router-outlet></router-outlet>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="br">
+            <h1 class="sum" style="text-align: center">Table No. 4</h1>
+            <br>
+            <h3 *ngIf="val == 1" style="text-align: center">Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+            <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+            <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+            <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+            <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+            <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+        </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="br">
+            <h1 class="sum" style="text-align: center">Table No. 5 </h1>
+            <br>
+            <h3 *ngIf="val == 1" style="text-align: center">Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+          <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+          <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+          <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+          <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+          <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+    </div>
+        </div>
+    <div class="col-sm-4">
+        <div class="br">
+        <h1 class="sum" style="text-align: center">Table No. 6 </h1>
+        <br>
+        <h3 *ngIf="val == 1" style="text-align: center">Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+        <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+        <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+        <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+        <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+        <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+      </div>
+      </div>
+      </div>
+    </div>
+   
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+              <div class="br">
+                <h1 class="sum" style="text-align: center">Table No. 7 </h1>
+                <br>
+                <h3 *ngIf="val == 1" style="text-align: center">Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+                <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+                <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+                <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+                <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+                <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+            </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="br">
+                <h1 class="sum" style="text-align: center">Table No. 8 </h1>
+                <br>
+                <h3 *ngIf="val == 1" style="text-align: center" >Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+              <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+              <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+              <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+              <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+              <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+        </div>
+            </div>
+        <div class="col-sm-4">
+            <div class="br">
+            <h1 class="sum" style="text-align: center">Table No. 9 </h1>
+            <br>
+            <h3 *ngIf="val == 1" style="text-align: center">Good Service</h3>
+        <h3 *ngIf="val == 2" style="text-align: center">Water</h3>
+        <h3 *ngIf="val == 3" style="text-align: center">Waitor</h3>
+        <h3 *ngIf="val == 4" style="text-align: center">Food Menu</h3>
+        <h3 *ngIf="val == 5" style="text-align: center">Bill</h3>
+            <!-- <img *ngIf="val== 1"src="assets/good2.jpg" alt="Good Service" width="100%" height="100%">
+            <img *ngIf="val== 2"src="assets/waterjug.jpg" alt="Water" width="100%" height="100%">
+            <img *ngIf="val== 3"src="assets/Waiter.png" alt="Waitor" width="100%" height="100%">
+            <img *ngIf="val== 4"src="assets/menu1.png" alt="Food Menu" width="100%" height="100%">
+            <img *ngIf="val== 5"src="assets/indianrs.jpg" alt="Bill" width="100%" height="100%"> -->
+          </div>
+          </div>
+          </div>
+        </div>
+     
+    <br>
+    <br>
+   <div class="container">
+        <footer style="text-align: center;">
+              <i class="fa fa-facebook-official" ></i>
+              <i class="fa fa-instagram "></i>
+              <i class="fa fa-snapchat "></i>
+              <i class="fa fa-pinterest-p "></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-linkedin"></i>
+            <div class="g">
+            <p>Powered By <a href="http://www.ezmata.com/" title="Ezmata" target="_blank">Ezmata.com</a></p>
+        </div>  
+        </footer>
+   </div>
+
+  <!-- </div> -->
+  
+  
+  <!-- <div class="row">
+  <div class="col-sm-4">
+  <h1 style="text-align: center ; color :#3d88b9 ;">Our Menu</h1> 
+  <br>
+  <h4 style="text-align: center">Bread Basket</h4>
+      <p style="color :grey;text-align: center">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h4 style="text-align: center">Honey Almond Granola with Fruits</h4>
+      <p style="color :grey;text-align: center">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h4 style="text-align: center">Belgian Waffle</h4>
+      <p style="color :grey;text-align: center">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h4 style="text-align: center" >Scrambled eggs</h4>
+      <p style="color :grey;text-align: center">Scrambled eggs, roasted red
+         pepper and garlic, with green onions 7.50</p><br>
+    
+      <h4 style="text-align: center">Blueberry Pancakes</h4>
+      <p style="color :grey;text-align: center">With syrup, butter and lots of berries 8.50</p>  
+  </div>
+  <div class="col-sm-8">
+      <img style="padding: 5px 5px;" src="assets/lunch2.jpeg"  alt="Menu" width="100%" height="100%">
+  </div>
+  </div> -->
+  
